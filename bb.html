@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для тебя</title>
+    <!-- Подключение шрифта Cormorant Garamond из Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #faf6f0;
+            color: #2c2c2c;
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .letter-container {
+            max-width: 700px;
+            width: 90%;
+            background-color: #fff;
+            padding: 60px 80px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Эффект слегка помятой бумаги */
+        .letter-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            font-weight: 400;
+            margin-bottom: 40px;
+            line-height: 1.3;
+            letter-spacing: 0.5px;
+        }
+        
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 50px;
+            opacity: 0.8;
+        }
+        
+        .heart {
+            color: #d4af37;
+            font-size: 1.5em;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            .letter-container {
+                padding: 40px 25px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="letter-container">
+        <h1>Это котик Скарамучча — он станет моим прощальным подарком тебе.</h1>
+        
+        <p>Спасибо за наше общение. Пусть оно и было недолгим, но для меня эти дни — одни из самых светлых и дорогих. Ты единственный, перед кем мне по-настоящему захотелось раскрыться, поделиться тем, что обычно остаётся внутри.</p>
+        
+        <p>Прости, если ненароком чем-то тебя задел — совсем не хотел причинить боль.</p>
+        
+        <p>Пусть этот котик напоминает о времени, которое мы проводили вместе, пусть даже лишь в словах.<span class="heart">💛</span></p>
+		<p>Прости что так и не отвез на Фортштадт.</p>
+        
+        <div class="signature">двухметровый неопределенный объект</div>
+    </div>
+
+</body>
+</html>
